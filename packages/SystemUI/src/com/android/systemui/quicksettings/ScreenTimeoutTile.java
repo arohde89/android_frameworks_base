@@ -19,11 +19,11 @@ import com.android.systemui.statusbar.phone.QuickSettingsContainerView;
 public class ScreenTimeoutTile extends QuickSettingsTile {
 
     // timeout values
-    private static final int SCREEN_TIMEOUT_MIN    =  15000;
-    private static final int SCREEN_TIMEOUT_LOW    =  30000;
-    private static final int SCREEN_TIMEOUT_NORMAL =  60000;
-    private static final int SCREEN_TIMEOUT_HIGH   = 120000;
-    private static final int SCREEN_TIMEOUT_MAX    = 300000;
+    private static final int SCREEN_TIMEOUT_MIN    =  15000;  //15 SECS
+    private static final int SCREEN_TIMEOUT_LOW    =  30000;  //30 SECS
+    private static final int SCREEN_TIMEOUT_NORMAL =  60000;  //60 SECS
+    private static final int SCREEN_TIMEOUT_HIGH   = 120000;  //120 SECS 
+    private static final int SCREEN_TIMEOUT_MAX    = 1800000; // 30MINS
 
     // cm modes
     private static final int CM_MODE_15_60_300 = 0;
