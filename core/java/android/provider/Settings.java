@@ -1913,10 +1913,18 @@ public final class Settings {
         public static final String BUTTON_BACKLIGHT_TIMEOUT = "button_backlight_timeout";
 
         /**
-         * Whether to enable the electron beam animation when turning screen off
-         *
-         * @hide */
+         * Control whether the screen off animation should be shown
+         * @hide
+         */
         public static final String SCREEN_OFF_ANIMATION = "screen_off_animation";
+
+        /**
+         * Control which animation to use when turning the screen off
+         * 0 = electron beam
+         * 1 = fade
+         * @hide
+         */
+        public static final String SCREEN_ANIMATION_STYLE = "screen_animation_style";
 
         /**
          * Control whether the process CPU usage meter should be shown.
@@ -3094,6 +3102,36 @@ public final class Settings {
         public static final String QUIET_HOURS_END = "quiet_hours_end";
 
         /**
+         * Whether to remove the sound from phone ringing during quiet hours.
+         * @hide
+         */
+        public static final String QUIET_HOURS_RINGER = "quiet_hours_ringer";
+
+        /**
+         * Constant: Keep ringer on for all numbers during quiet hours
+         * @hide
+         */
+        public static final int QUIET_HOURS_RINGER_ALLOW_ALL = 0;
+
+        /**
+         * Constant: Only ring for numbers in contact list during quiet hours
+         * @hide
+         */
+        public static final int QUIET_HOURS_RINGER_CONTACTS_ONLY = 1;
+
+        /**
+         * Constant: Only ring for favorite contacts during quiet hours
+         * @hide
+         */
+        public static final int QUIET_HOURS_RINGER_FAVORITES_ONLY = 2;
+
+        /**
+         * Constant: Disable ringer during quiet hours
+         * @hide
+         */
+        public static final int QUIET_HOURS_RINGER_DISABLED = 3;
+
+        /**
          * Whether to remove the sound from outgoing notifications during quiet hours.
          * @hide
          */
@@ -3495,7 +3533,9 @@ public final class Settings {
             QUIET_HOURS_ENABLED,
             QUIET_HOURS_START,
             QUIET_HOURS_END,
+            QUIET_HOURS_RINGER,
             QUIET_HOURS_MUTE,
+            QUIET_HOURS_HAPTIC,
             QUIET_HOURS_SYSTEM,
             QUIET_HOURS_STILL,
             QUIET_HOURS_DIM,
