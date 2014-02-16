@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2013-2014 The CyanogenMod Project
+     Copyright (C) 2014 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,7 +15,5 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- AOSP/CAF -->
-    <string name="progress_nomediapresent" product="default">No hay medios extraíbles\u2026</string>
-    <string name="transient_navigation_confirmation_long">Deslizar hacia abajo desde el borde de la pantalla para mostrar la barra de estado</string>
+    <string name="keyguard_discharging">In uso (<xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g>)</string>
 </resources>
