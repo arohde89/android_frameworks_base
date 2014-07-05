@@ -2850,11 +2850,18 @@ public final class Settings {
         public static final String HEADS_UP_NOTIFICATION = "heads_up_enabled";
 
         /**
-         * Which applications to disable heads up notifications for
+         * Which applications to disable heads up notifications in
          *
          * @hide
          */
         public static final String HEADS_UP_CUSTOM_VALUES = "heads_up_custom_values";
+
+        /**
+         * Which applications to disable heads up notifications for
+         *
+         * @hide
+         */
+        public static final String HEADS_UP_BLACKLIST_VALUES = "heads_up_blacklist_values";
 
         /**
          * Quick Settings Panel Dynamic Tiles
@@ -3890,6 +3897,14 @@ public final class Settings {
         @Deprecated
         public static final String WIFI_WATCHDOG_PING_TIMEOUT_MS =
             Secure.WIFI_WATCHDOG_PING_TIMEOUT_MS;
+
+        /**
+         * boolean value. toggles using arrow key locations on nav bar
+         * as left and right dpad keys
+         * @hide
+         */
+        public static final String NAVIGATION_BAR_MENU_ARROW_KEYS = "navigation_bar_menu_arrow_keys";
+
     }
 
     /**
